@@ -30,7 +30,7 @@ export class DrawPage {
     let n = 5;
     let sketch = p => {
       p.setup = () => {
-        var cnv = p.createCanvas(p.windowWidth, p.windowHeight - 59);
+        var cnv = p.createCanvas(p.windowWidth, p.windowHeight);
         cnv.parent('myContainer');
         points = [];
         for (let i = 0; i < n; i++) {
@@ -84,7 +84,7 @@ export class DrawPage {
     let c2;
     let sketch = p => {
       p.setup = () => {
-        var cnv = p.createCanvas(p.windowWidth, p.windowHeight - 59);
+        var cnv = p.createCanvas(p.windowWidth, p.windowHeight);
         cnv.parent('myContainer');
         p.background(255);
         p.noStroke();
